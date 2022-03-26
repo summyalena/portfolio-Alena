@@ -28,6 +28,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-col justify-center mx-auto items-center">
           <h1 className="text-indigo-400 text-md ">Further Contact Me</h1> 
+          <h4 className="text-pink-800 text-md ">summyalena@gmail.com</h4> 
           <div className="flex mt-5 inline-flex justify-center gap-5 ">
           <a href="https://twitter.com/AOkolike" target="blank" className=""> <ImTwitter  className=" w-50 shadow-xl text-[#61DBFB] h-50 "/></a> 
           <a href="https://www.linkedin.com/in/assumpta-okolike-58aba41b3/" target="blank" className=" " ><BsLinkedin className=" text-blue-800  shadow-xl w-50 h-50 "/></a>
