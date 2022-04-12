@@ -13,6 +13,7 @@ const Home = () => {
                       variants={{hidden:{scale:0.8,opacity:0},visible:{scale:1,opacity:1,transition:{delay:1}}}}    
         className='flex justify-between text-center 
          pt-28 md:pt-40 h-auto md:px-5 mx-10 md:mx-20'>
+           
             <div className='w-2/4 h-92 mt-2 rounded-full relative px-2 hidden md:block shadow-xl ml-7 '>
                 <Image 
                 src={Alena}

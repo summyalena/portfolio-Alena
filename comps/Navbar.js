@@ -1,32 +1,46 @@
 import React from 'react'
 import { Transition } from '@headlessui/react'
-import { Link } from 'react-scroll/'
+import { Link } from 'react-scroll'
 import {useState} from "react"
 const Navbar = () => {
    const [isOpen,setIsOpen] = useState(false);
   return (
     <div>
       <nav className="w-full z-20 fixed md:mb-16 bg-[#F0F6F7FF]-400">
+
+           {/* div for the main wrapper */}
         <div className="w-full bg-white-200">
+
+                    {/* div that holds the first wrapper */}
            <div className="flex items-center w-full h-20">
+                  {/* second wrapper that holds the nav writeups */}
              <div className="w-full flex items-center justify-between sm:mx-10 md:mx-20">
+
+                         {/* div for the left heading */}
                  <div className="flex flex-shrink-0 px-1 items-center flex-justify-center py-2 ml-10">
                     <h1 className="font-bold cursor-pointer ">Lena <span className="text-pink-500 font-bold">Page</span></h1>
                  </div>
+                       {/* div for the nav links */}
                         <div className="hidden md:block">
                         <div className="ml-32 pt-2 space-x-4 flex justify-center items-baseline ">
                             <Link activeClass="Home" to="home" offset={50} duration={500} smooth={true} className="text-pink-300 px-3 cursor-pointer hover:bg-white hover:text-indigo-500">Home</Link>
                             <Link activeClass="services" to="services" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">About</Link>
+                            <Link activeClass="imageslide" to="imageslide" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Me</Link>
                             <Link activeClass="project" to="project" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Projects</Link>
                             <Link activeClass="client" to="client" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Clients</Link>
                             <Link activeClass="Contact" to="contact" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Contact</Link>
                         </div>
-                       
                         </div>
+
+                           {/* div for the right span */}
                         <div className='flex-shrink-0 justify-center flex justify-center '>
                            <h1 className='text-black-500 cursor-pointer hidden md:block font-semibold text-lg'>Say <span className="text-pink-500 text-xl font-bold">Hi!</span></h1>
                         </div>
-               </div>
+                              {/* right span ends here */}
+
+               </div>    
+                          {/* second wrapper ends here */}
+
                  {/* for mobile screens */}
                  <div className="mr-14 flex md:hidden">
                     <button
@@ -68,9 +82,12 @@ const Navbar = () => {
                                 </svg>) }
                     </button>
                  </div>
+                 {/* div that ends mobile screen button style up */}
            </div>
-                
+                {/* div that ends the first nav wrapper */}
         </div>
+        {/* div that ends the main wrapper */}
+
         <Transition show={isOpen}
                      enter="transition ease-out duration-100
                      transform"

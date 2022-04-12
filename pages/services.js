@@ -39,18 +39,18 @@ function Services() {
                  {/* wrapper */}
                
                  
-                 <motion.div  animate={animation}  variants={Variants} className="flex flex-col bg-white rounded-lg mx-10 shadow-md w-full
-                 m-7  overflow-hidden sm:w-52  cursor-pointer ">
+                 <motion.div  animate={animation}  variants={Variants} className="flex flex-col bg-white rounded-lg mx-10 shadow-md w-50
+                 m-7  overflow-hidden  sm:w-30 cursor-pointer ">
                   <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
                       <TiHtml5 className='rounded-md bg-[#E34C26] m-6 mx-auto shadow-xl w-40 h-40 text-[#ebebeb]  '/>                      
-                          <p className='text-black-900 font-bold text-center px-2 pb-5'>HTML</p>
+                          <p className='text-black-900 fontx-bold text-center px-2 pb-5'>HTML</p>
                            
                           <p className="text-[#ebebeb] bg-[#E34C26] font-bold text-center">Very Proficient</p>
                           </motion.div>
                  </motion.div>
                 
-                 <motion.div initial="hidden" animate={animation}  variants={Variants} className="flex flex-col bg-white rounded-lg mx-10 shadow-md w-full
-                 m-7  overflow-hidden sm:w-52  cursor-pointer ">
+                 <motion.div initial="hidden" animate={animation}  variants={Variants} className="flex flex-col bg-white rounded-lg mx-10 shadow-md w-50
+                 m-7  overflow-hidden sm:w-30  cursor-pointer ">
                   <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
                       <RiReactjsLine className='rounded-md bg-[#61DBFB] m-6 mx-auto shadow-xl w-40 h-40 text-[#ebebeb]  '/>                      
                           <p className='text-black-900 font-bold text-center px-2 pb-5'>REACT</p>
@@ -61,7 +61,7 @@ function Services() {
                 
 
                  <motion.div initial="hidden" animate={animation} variants={Variants} 
-                  className="flex flex-col bg-white rounded-lg shadow-md w-full
+                  className="flex flex-col bg-white rounded-lg shadow-md w-50
                  m-7 overflow-hidden sm:w-52  cursor-pointer ">
                    <motion.div className='' whileHover={{scale:0.8, transition:{duration:.2,}}}>
                       <SiNextdotjs className='rounded-md bg-white m-6 mx-auto shadow-xl w-40 h-40 text-black'/>                      
@@ -71,7 +71,7 @@ function Services() {
                  </motion.div>
 
                  <motion.div animate={animation} variants={Variants} initial="hidden"
-                 className="flex flex-col bg-white rounded-lg shadow-md w-full
+                 className="flex flex-col bg-white rounded-lg shadow-md w-50
                  m-7 overflow-hidden sm:w-52 ">
                     <motion.div className='' whileHover={{scale:0.8, transition:{duration:.2}}}>
                       <SiTailwindcss className='rounded-md bg-[#0f1a26] m-6 mx-auto shadow-xl w-40 h-40 text-[#3d9690]'/>                      
@@ -81,7 +81,7 @@ function Services() {
                  </motion.div>
 
                  <motion.div initial="hidden" animate={animation} variants={Variants} 
-                  className="flex flex-col bg-white rounded-lg shadow-md w-full
+                  className="flex flex-col bg-white rounded-lg shadow-md w-50
                  m-7 overflow-hidden sm:w-52 ">
                     <motion.div className='' whileHover={{scale:0.8, transition:{duration:.2}}}>
                       <IoLogoJavascript className='rounded-md bg-[#ffdb6e] m-6 mx-auto shadow-xl w-40 h-40 '/>                      

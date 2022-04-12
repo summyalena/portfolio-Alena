@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../comps/Navbar'
 import HomePage from './home';
 import Services from './services'
+import Imageslide from './imageslide'
 import Project from './project'
 import Client from './client'
 import Contact from './contact'
@@ -19,6 +20,7 @@ export default function Home() {
          <Navbar/>
          <HomePage/>
          <Services/>
+         <Imageslide/>
          <Project/>
          <Client/>
          <Contact/>
