@@ -29,7 +29,7 @@ function Services() {
     <Element  id="services" name="services">
         
        <div 
-        className="w-full h-auto my-40 md:pb-40 md:pt-10 items-center flex flex-col justify-center">
+        className="w-full h-auto my-40 md:my-35 md:pb-40 md:pt-10 items-center flex flex-col justify-center">
 
                <h3 className="text-gray-600 text-sm uppercase">Services</h3>
                <p className="text-4xl mt-2 text-center font-bold text-indigo-700">My Skillset</p>

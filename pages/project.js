@@ -2,6 +2,10 @@ import React from 'react'
 import {Element} from 'react-scroll'
 import Image from "next/image"
 import one from "../public/one.png"
+import twitterpic from '../public/twitterpic.JPG'
+import tastymeals from '../public/tastymeals.JPG'
+import youthsummit from '../public/youthsummit.JPG'
+import microverse from '../public/microversePortfolio.JPG'
 import {motion} from "framer-motion"
 import {useAnimation} from "framer-motion"
 import {useEffect} from "react"
@@ -27,25 +31,39 @@ const Project = () => {
          
             <motion.div animate={animation} className="md:flex flex-col md:flex-row flex gap-10 mt-10 justify-center items-center mt-10">
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                      <Image src={one} alt="" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+               <Image src={twitterpic} alt="" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+               <div className='absolute bg-[#0f050454] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                       <a href="https://tastmeals.netlify.app/https://twitter-clone-alena.vercel.app/ " className=' font-semibold text-[#fff]'>click to see Live Version</a>
+                        </div>
                   </div>
+
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                      <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+                    <Image src={tastymeals} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+                    <div className='absolute bg-[#63221980] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                       <a href="https://tastmeals.netlify.app/ " className=' font-semibold text-[#fff]'>click to see Live Version</a>
+                        </div>
                   </div>
+
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                      <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+                    <Image src={youthsummit} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+                    <div className='absolute bg-[#a09e9e7c] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                       <a href="https://summyalena.github.io/YouthSummit/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
+                        </div>
                   </div>
             </motion.div>
 
             <motion.div animate={animation} className="md:flex flex-col md:flex-row flex gap-10 mt-10 justify-center items-center mt-10">
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                      <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+                   <Image src={microverse} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+                   <div className='absolute bg-[#111413a9] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                       <a href="https://summyalena.github.io/Website-Portfolio/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
+                        </div>
                   </div>
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                      <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
-                  </div>
-                  <div className="rounded w-80 h-60 shadow-xl relative">
-                      <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+                    <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
+                    <div className='absolute bg-[#19634654] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                       <a href="https://tip-calculator-orpin-psi.vercel.app/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
+                        </div>
                   </div>
             </motion.div>
 

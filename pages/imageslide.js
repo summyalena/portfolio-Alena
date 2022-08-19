@@ -53,8 +53,9 @@ function imageslide() {
   return (
       <Element id="imageslide" name="imageslide">  
           <>
-    <div className="flex h-auto md:pt-40 justify-center space-x-4 w-full">
-        <button className="h-auto w-10 bg-pink-400 font-extrabold text-3xl" onClick={handlePrev}>
+          <div className='w-full md:mt-10 h-60'>
+    <div className="flex h-auto justify-center  w-full">
+        <button className="h-auto w-10 bg-pink-400 font-extrabold text-white text-3xl" onClick={handlePrev}>
             {"<"}
         </button>
         <div className="relative w-96 border-2 h-56 overflow-hidden rounded-xl">
@@ -62,9 +63,10 @@ function imageslide() {
             <img className={`absolute object-contain z-20 w-full h-full p-4 ${transL ? 'animate-slideR' : transR ? 'transition duration-500 ease-linear transform translate-x-full' : ''} `} src={images[index1]} alt=""/>
 
         </div>
-       <button className="h-auto w-10 bg-pink-400 font-extrabold text-3xl" onClick={handleNext}>
+       <button className="h-auto w-10 text-white bg-pink-400 font-extrabold text-3xl" onClick={handleNext}>
            {">"}
        </button>
+    </div>
     </div>
     </>
     </Element>

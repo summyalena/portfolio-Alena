@@ -25,7 +25,7 @@ const Client = () => {
     <div ref={ref}  variants={list} initial="hidden" animate={animation} className="w-full h-auto pt-20 py-20 flex flex-col justify-center items-center">
         <p className="text-gray-500 text-sm uppercase">Clients</p>
         <h3 className='text-indigo-500 font-bold text-3xl'>Future Clients</h3>
-         <motion.div animate={animation} initial="hidden" variants={list} className='flex md:flex-row sm:flex-row gap-10 justify-center items-center'>
+         <motion.div animate={animation} initial="hidden" variants={list} className='flex md:flex-row sm:flex-row gap-2 justify-center items-center'>
              <motion.div className='w-20 sm:w-full'>
                  <AiOutlineGoogle className="text-gray-500 hover:text-black hover:cursor-pointer bg-gray p-3 w-20 h-20"/>
              </motion.div>
