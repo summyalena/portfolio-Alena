@@ -2,9 +2,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-![Screenshot 2022-04-28 at 14-43-20 Lena Portfolio](https://user-images.githubusercontent.com/95056164/165767046-a5aa6023-f3c0-4d4f-9e2d-ddee7493ac52.png)
+## Screenshot
+![lenaportold](https://user-images.githubusercontent.com/95056164/185654533-888534f1-0778-4123-9b5b-b67f02ba1ff8.JPG)
 
 
-This is my webApp url https://lena-portfolio.vercel.app/
+
+
+[click here to see live version](https://lena-portfolio.vercel.app/)
 
 
