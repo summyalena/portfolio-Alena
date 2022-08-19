@@ -30,41 +30,52 @@ const Project = () => {
         <h3 className="text-center text-indigo-700 font-bold text-4xl">All Creative Works </h3>
          
             <motion.div animate={animation} className="md:flex flex-col md:flex-row flex gap-10 mt-10 justify-center items-center mt-10">
+            <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
                   <div className="rounded w-80 h-60 shadow-xl relative">
-               <Image src={twitterpic} alt="" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
-               <div className='absolute bg-[#0f050454] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+               <Image src={twitterpic} alt="" layout="fill" objectFit="cover" className="p-2 rounded"/>
+               <div className='absolute bg-[#0f050454] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
                        <a href="https://tastmeals.netlify.app/https://twitter-clone-alena.vercel.app/ " className=' font-semibold text-[#fff]'>click to see Live Version</a>
                         </div>
                   </div>
+                  </motion.div>
 
+                  <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                    <Image src={tastymeals} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
-                    <div className='absolute bg-[#63221980] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                    <Image src={tastymeals} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
+                    <div className='absolute bg-[#63221980]  mt-20 cursor-pointer hover:text-xl hover:transition  hover:font-bold font-semibold w-full h-10 text-center justify-center flex'>
                        <a href="https://tastmeals.netlify.app/ " className=' font-semibold text-[#fff]'>click to see Live Version</a>
                         </div>
                   </div>
+                  </motion.div>
 
+                  <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                    <Image src={youthsummit} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
-                    <div className='absolute bg-[#a09e9e7c] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                    <Image src={youthsummit} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
+                    <div className='absolute bg-[#a09e9e7c] hover:to-black mt-20 hover:text-xl hover:transition  hover:font-bold cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
                        <a href="https://summyalena.github.io/YouthSummit/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
                         </div>
                   </div>
+                  </motion.div>
             </motion.div>
 
             <motion.div animate={animation} className="md:flex flex-col md:flex-row flex gap-10 mt-10 justify-center items-center mt-10">
+            <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                   <Image src={microverse} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
-                   <div className='absolute bg-[#111413a9] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                   <Image src={microverse} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
+                   <div className='absolute bg-[#111413a9] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
                        <a href="https://summyalena.github.io/Website-Portfolio/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
                         </div>
                   </div>
+                  </motion.div>
+
+                  <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
                   <div className="rounded w-80 h-60 shadow-xl relative">
-                    <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer"/>
-                    <div className='absolute bg-[#19634654] hover:to-black mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                    <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
+                    <div className='absolute bg-[#19634654] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
                        <a href="https://tip-calculator-orpin-psi.vercel.app/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
                         </div>
                   </div>
+                  </motion.div>
             </motion.div>
 
             <div className="flex gap-5 mx-10 justify-items-start">
