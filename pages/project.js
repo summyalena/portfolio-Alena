@@ -34,7 +34,7 @@ const Project = () => {
                   <div className="rounded w-80 h-60 shadow-xl relative">
                <Image src={twitterpic} alt="" layout="fill" objectFit="cover" className="p-2 rounded"/>
                <div className='absolute bg-[#0f050454] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
-                       <a href="https://tastmeals.netlify.app/https://twitter-clone-alena.vercel.app/ " className=' font-semibold text-[#fff]'>click to see Live Version</a>
+                       <a href="https://twitter-clone-alena.vercel.app/ " className=' font-semibold text-[#fff]'>click to see Live Version</a>
                         </div>
                   </div>
                   </motion.div>
