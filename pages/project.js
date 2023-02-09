@@ -9,6 +9,7 @@ import microverse from '../public/microversePortfolio.JPG'
 import {motion} from "framer-motion"
 import {useAnimation} from "framer-motion"
 import {useEffect} from "react"
+import covid from '../public/covidcases.jpg'
 import {useInView} from "react-intersection-observer"
 
 const Project = () => {
@@ -73,6 +74,15 @@ const Project = () => {
                     <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
                     <div className='absolute bg-[#19634654] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
                        <a href="https://tip-calculator-orpin-psi.vercel.app/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
+                        </div>
+                  </div>
+                  </motion.div>
+
+                  <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
+                  <div className="rounded w-80 h-60 shadow-xl relative">
+                    <Image src={covid} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
+                    <div className='absolute bg-[#19634654] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
+                       <a href="https://covidcheckssplend.netlify.app/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
                         </div>
                   </div>
                   </motion.div>

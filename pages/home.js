@@ -1,5 +1,9 @@
 import React from 'react'
+
+
 import Image from "next/image"
+
+
 import Alena from '../public/alena.jpg'
 import {Element} from 'react-scroll'
 import {motion} from 'framer-motion'
