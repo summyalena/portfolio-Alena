@@ -2,9 +2,10 @@ import React from 'react'
 import styles from '../styles/home.module.css'
 import Image from 'next/image';
 
-function ModalProjects({modalData}) {
+function ModalProjects({modalData, setModalClose}) {
   return (
     <div className={styles.main} key={modalData.id}>
+        <button onClick={setModalClose}>Close</button>
     <h2 className='font-bold font-serif text-3xl'>{modalData.name}</h2>
 <div className="rounded w-60 h-40 shadow-xl">
 <Image src={modalData.img} objectFit="contain" 

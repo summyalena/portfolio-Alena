@@ -13,24 +13,13 @@ import ModalProjects from '../comps/modalProjects';
 const Project = () => {
   
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalData, setModalData] = useState(Projects)
+
 
   const setModalClose = () => {
     setModalOpen(false);
   }
 
-  const customStyles = {
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      transform: 'translate(-50%, -50%)',
-      width: '48%',
-      height: '50%',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }
+
   }
 
      const {ref, inView} = useInView();
@@ -50,7 +39,7 @@ const Project = () => {
         <h2 className="text-center text-indigo-700 font-bold text-5xl mb-5">All Creative Works </h2>
           <p className="mb-5 font-sans text-center">Selected projects i've worked on in the past</p>
           <motion.div animate={animation}  className=" sm:flex-col md:grid-cols-3 grid gap-10 opacity-90 justify-center items-center mt-10">
-          {!Projects || Projects.length === 0 ? 'null' : Projects.map(project => 
+          {Projects.map(project => 
             <div className='' key={project.id}>
              
             <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
@@ -58,15 +47,33 @@ const Project = () => {
                <Image src={project.img} alt="" layout="fill" objectFit="cover" className="p-2 rounded"/>
                <div className='absolute bg-[#0f050454] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
                        <button onClick={() => {
-                        setModalData(project)
+                        // setModalData(project)
                         setModalOpen(true)                
                               }} 
                               className=' font-semibold text-[#fff]'>click to see Details</button>
                         </div>
                   </div>
+                  { modalOpen ? 
+                    <div className={styles.main} key={project.id}>
+                    <button onClick={setModalClose}>Close</button>
+                <h2 className='font-bold font-serif text-3xl'>{project.name}</h2>
+            <div className="rounded w-60 h-40 shadow-xl">
+            <Image src={project.img} objectFit="contain" 
+            />
+            </div>
+            <div className={styles.text}>
+            <p className={styles.desc}>{project.description}</p>
+            <p className={styles.link}>Live-Link: <a className={styles.a} href={project.liveLink}>{project.liveLink}</a> </p>
+            <p className={styles.link}>Github-Link: <a className={styles.a} href={project.codeLink}>{project.codeLink}</a> </p>
+            <p className={styles.link}>TechStack: {project.techStack}</p>
+            </div>
+            </div>
+                  : null}
                   </motion.div>
+                  
             </div>
           )}
+           
            </motion.div>
            
                   
