@@ -27,8 +27,6 @@ const Project = () => {
       transform: 'translate(-50%, -50%)',
       width: '60%',
       height: '50%',
-      backgroundColor: 'blue',
-
     }
   }
 
