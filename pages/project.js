@@ -68,10 +68,7 @@ const Project = () => {
             </div>
           )}
            </motion.div>
-           <Modal className={styles.container} isOpen={modalOpen} modalData={modalData}   style={customStyles} onRequestClose={()=> setModalOpen(false)}>
-            <button className={styles.button} onClick={setModalClose}>Close</button>
-             <ModalProjects modalData={modalData}/>
-           </Modal>
+           
                   
         </div>
     </Element>
