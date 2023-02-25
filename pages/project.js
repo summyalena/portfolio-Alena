@@ -1,18 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Element} from 'react-scroll'
 import Image from "next/image"
-import one from "../public/one.png"
-import twitterpic from '../public/twitterpic.JPG'
-import tastymeals from '../public/tastymeals.JPG'
-import youthsummit from '../public/youthsummit.JPG'
-import microverse from '../public/microversePortfolio.JPG'
+import Projects from '../comps/object';
+import Modal from 'react-modal';
 import {motion} from "framer-motion"
 import {useAnimation} from "framer-motion"
 import {useEffect} from "react"
-import covid from '../public/covidcases.jpg'
 import {useInView} from "react-intersection-observer"
+import styles from '../styles/home.module.css'
+import ModalProjects from '../comps/modalProjects';
 
 const Project = () => {
+  
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalData, setModalData] = useState(Projects)
+
+  const setModalClose = () => {
+    setModalOpen(false);
+  }
+
+  const customStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      transform: 'translate(-50%, -50%)',
+      width: '48%',
+      height: '50%',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }
+  }
+
      const {ref, inView} = useInView();
      const animation = useAnimation();
      useEffect(()=>{
@@ -27,73 +47,32 @@ const Project = () => {
   return (
       <Element id="project" name="project">
     <div ref={ref}  className="flex w-98vw h-auto justify-center mt-30 my-20 flex-col">
-        <p className="text-center text-gray-500 text-sm">Portfolio</p>
-        <h3 className="text-center text-indigo-700 font-bold text-4xl">All Creative Works </h3>
-         
-            <motion.div animate={animation} className="md:flex flex-col md:flex-row flex gap-10 mt-10 justify-center items-center mt-10">
+        <h2 className="text-center text-indigo-700 font-bold text-5xl mb-5">All Creative Works </h2>
+          <p className="mb-5 font-sans text-center">Selected projects i've worked on in the past</p>
+          <motion.div animate={animation}  className=" sm:flex-col md:grid-cols-3 grid gap-10 opacity-90 justify-center items-center mt-10">
+          {!Projects || Projects.length === 0 ? 'null' : Projects.map(project => 
+            <div className='' key={project.id}>
+             
             <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
                   <div className="rounded w-80 h-60 shadow-xl relative">
-               <Image src={twitterpic} alt="" layout="fill" objectFit="cover" className="p-2 rounded"/>
+               <Image src={project.img} alt="" layout="fill" objectFit="cover" className="p-2 rounded"/>
                <div className='absolute bg-[#0f050454] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
-                       <a href="https://twitter-clone-alena.vercel.app/ " className=' font-semibold text-[#fff]'>click to see Live Version</a>
+                       <button onClick={() => {
+                        setModalData(project)
+                        setModalOpen(true)                
+                              }} 
+                              className=' font-semibold text-[#fff]'>click to see Details</button>
                         </div>
                   </div>
                   </motion.div>
-
-                  <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
-                  <div className="rounded w-80 h-60 shadow-xl relative">
-                    <Image src={tastymeals} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
-                    <div className='absolute bg-[#63221980]  mt-20 cursor-pointer hover:text-xl hover:transition  hover:font-bold font-semibold w-full h-10 text-center justify-center flex'>
-                       <a href="https://tastmeals.netlify.app/ " className=' font-semibold text-[#fff]'>click to see Live Version</a>
-                        </div>
-                  </div>
-                  </motion.div>
-
-                  <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
-                  <div className="rounded w-80 h-60 shadow-xl relative">
-                    <Image src={youthsummit} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
-                    <div className='absolute bg-[#a09e9e7c] hover:to-black mt-20 hover:text-xl hover:transition  hover:font-bold cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
-                       <a href="https://summyalena.github.io/YouthSummit/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
-                        </div>
-                  </div>
-                  </motion.div>
-            </motion.div>
-
-            <motion.div animate={animation} className="md:flex flex-col md:flex-row flex gap-10 mt-10 justify-center items-center mt-10">
-            <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
-                  <div className="rounded w-80 h-60 shadow-xl relative">
-                   <Image src={microverse} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
-                   <div className='absolute bg-[#111413a9] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
-                       <a href="https://summyalena.github.io/Website-Portfolio/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
-                        </div>
-                  </div>
-                  </motion.div>
-
-                  <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
-                  <div className="rounded w-80 h-60 shadow-xl relative">
-                    <Image src={one} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
-                    <div className='absolute bg-[#19634654] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
-                       <a href="https://tip-calculator-orpin-psi.vercel.app/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
-                        </div>
-                  </div>
-                  </motion.div>
-
-                  <motion.div className='' whileHover={{scale:0.8, transition:{duration:0.2, type:"fade-in"}}}>
-                  <div className="rounded w-80 h-60 shadow-xl relative">
-                    <Image src={covid} alt=""  layout="fill" objectFit="cover" className="p-2 rounded"/>
-                    <div className='absolute bg-[#19634654] hover:text-xl hover:transition  hover:font-bold mt-20 cursor-pointer font-semibold w-full h-10 text-center justify-center flex'>
-                       <a href="https://covidcheckssplend.netlify.app/" className=' font-semibold text-[#fff]'>click to see Live Version</a>
-                        </div>
-                  </div>
-                  </motion.div>
-            </motion.div>
-
-            <div className="flex gap-5 mx-10 justify-items-start">
-                
-                </div>
-     
-        
-        
+            </div>
+          )}
+           </motion.div>
+           <Modal className={styles.container} isOpen={modalOpen} modalData={modalData}   style={customStyles} onRequestClose={()=> setModalOpen(false)}>
+            <button className={styles.button} onClick={setModalClose}>Close</button>
+             <ModalProjects modalData={modalData}/>
+           </Modal>
+                  
         </div>
     </Element>
   )

@@ -24,10 +24,8 @@ const Navbar = () => {
                         <div className="hidden md:block">
                         <div className="ml-32 pt-2 space-x-4 flex justify-center items-baseline ">
                             <Link activeClass="Home" to="home" offset={50} duration={500} smooth={true} className="text-pink-300 px-3 cursor-pointer hover:bg-white hover:text-indigo-500">Home</Link>
-                            <Link activeClass="services" to="services" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">About</Link>
-                            <Link activeClass="imageslide" to="imageslide" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Me</Link>
+                            <Link activeClass="services" to="services" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Skills</Link>
                             <Link activeClass="project" to="project" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Projects</Link>
-                            <Link activeClass="client" to="client" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Clients</Link>
                             <Link activeClass="Contact" to="contact" offset={50} duration={500}  smooth={true} className="text-black-300 px-3 cursor-pointer hover:text-pink-500">Contact</Link>
                         </div>
                         </div>
@@ -125,14 +123,6 @@ const Navbar = () => {
                                               offset={50} 
                                               duration={100} 
                                        className="text-base text-black-200  hover:bg-pink-300 hover:text-white rounded-md p-3  hover:opacity-60">Projects</Link>
-
-                                    <Link href='./client' 
-                                          activeClass='client' 
-                                          smooth={true} 
-                                          to='client'
-                                          offset={50}
-                                            duration={100} 
-                                    className="text-base text-black-200  hover:bg-pink-300 hover:text-white rounded-md p-3  hover:opacity-60">Clients</Link>
 
                                      <Link href='./contact' 
                                           activeClass='contact' 
