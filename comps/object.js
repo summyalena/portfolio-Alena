@@ -12,7 +12,7 @@ const Projects = [
         name: 'Todo App',
         img: Image1,
         description: 'This is a todo app done in Microverse to test my skills in javascript. It allows a user type and edit tasks',
-        liveLink: 'summyalena.github.io/Todo-List-App/',
+        liveLink: 'https://summyalena.github.io/Todo-List-App/',
         codeLink: 'https://github.com/summyalena/Todo-List-App',
         techStack: 'HTML, CSS, JAVASCRIPT',
     },
@@ -22,7 +22,7 @@ const Projects = [
         img: Image2 ,
         description: 'This is a web application that allows one make basic bookings for meals',
         liveLink: 'https://tastmeals.netlify.app/',
-        codeLink: 'https://github.com/summyalena/Tastmeals',
+        codeLink: 'https://github.com/summyalena/Tasty-Meals',
         techStack: 'React, CSS, JAVASCRIPT',
     },
     {
