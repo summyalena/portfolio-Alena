@@ -3,7 +3,7 @@ import Navbar from '../comps/Navbar'
 import HomePage from './home';
 import { StrictMode } from "react";
 import Services from './services';
-import Project from './Project';
+import Project from './project';
 import Contact from './contact'
 import Footer from  '../comps/footer'
 
