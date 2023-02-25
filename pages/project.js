@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Element} from 'react-scroll'
 import Image from "next/image"
 import Projects from '../comps/object';
-import Modal from 'react-modal';
+// import Modal from 'react-modal';
 import {motion} from "framer-motion"
 import {useAnimation} from "framer-motion"
 import {useEffect} from "react"
