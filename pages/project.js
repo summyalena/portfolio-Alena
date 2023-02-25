@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Element} from 'react-scroll'
 import Image from "next/image"
 import Projects from '../comps/object';
-// import Modal from 'react-modal';
+import Modal from 'react-modal';
 import {motion} from "framer-motion"
 import {useAnimation} from "framer-motion"
 import {useEffect} from "react"
@@ -14,12 +14,24 @@ const Project = () => {
   
   const [modalOpen, setModalOpen] = useState(false);
 
+  // const [modalData, setModalData] = useState(Projects)
 
   const setModalClose = () => {
     setModalOpen(false);
   }
 
-
+  const customStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      transform: 'translate(-50%, -50%)',
+      width: '48%',
+      height: '50%',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }
   }
 
      const {ref, inView} = useInView();
@@ -73,6 +85,9 @@ const Project = () => {
                   
             </div>
           )}
+          <Modal>
+            <ModalProjects/>
+          </Modal>
            
            </motion.div>
            
